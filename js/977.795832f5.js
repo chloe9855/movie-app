@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmovie_app"]=self["webpackChunkmovie_app"]||[]).push([[977],{6977:function(e,n,u){u.r(n),u.d(n,{default:function(){return i}});var t=function(){var e=this,n=e.$createElement,u=e._self._c||n;return u("div",[e._v(" 我的清單 ")])},l=[],r=u(1001),a={},c=(0,r.Z)(a,t,l,!1,null,null,null),i=c.exports}}]);
+//# sourceMappingURL=977.795832f5.js.map
