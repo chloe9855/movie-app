@@ -1,6 +1,6 @@
 const { defineConfig } = require('@vue/cli-service');
 module.exports = defineConfig({
-  publicPath: '/movie-app/',
+  publicPath: '/movie-app/dist/',
   transpileDependencies: true,
   css: {
     loaderOptions: {
