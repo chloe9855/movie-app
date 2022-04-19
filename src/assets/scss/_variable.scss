@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+
+// * ==========================================================================
+// * RWD Breakpoints
+// * ==========================================================================
+
+$desktop: (
+  xl: 1600px,
+  lg: 1440px,
+  md: 1280px,
+  sm: 1024px
+);
+
+$tablet: (
+  lg: 1023px,
+  md: 960px,
+  sm: 768px
+);
+
+$phone: (
+  lg: 767px,
+  md: 480px,
+  md2: 574px,
+  sm: 376px
+);
+
+
+// * ==========================================================================
+// * Color
+// * ==========================================================================
+
+// font
+$font-family: 'Noto Sans TC', sans-serif;
+
+// Colors
+$active-green: rgba(207, 249, 224, 1);
+$bg-green: rgba(239, 244, 243, 1);
+$button-orange: rgba(210, 163, 93, 1);
+$caution-red: rgba(224, 108, 108, 1);
+$dark-blue: #1F6473;
+$dark-sea-green: rgba(142, 203, 159, 1);
+$disable-green: rgba(219, 228, 226, 1);
+$gainsboro: rgba(226, 228, 228, 1);
+$header-black: rgba(17, 17, 17, 1);
+$input-gray: rgba(149, 149, 149, 1);
+$light-gray: rgba(190, 214, 208, 1);
+$light-blue: #D2E7EB;
+$linen: rgba(252, 232, 232, 1);
+$main-blue: #3E889F;
+$peru: rgba(190, 146, 81, 1);
+$sandy-brown: rgba(234, 181, 101, 1);
+$scrollbar: rgba(161, 191, 184, 1);
+$sienna: rgba(137, 59, 59, 1);
+$table-gray: rgba(245, 245, 245, 1);
+$transparent-gainsboro: rgba(220, 220, 220, 0.7);
+$transparent-white: rgba(255, 255, 255, 0);
+$white: rgba(255, 255, 255, 1);
+$word-black: rgba(73, 73, 73, 1);
+
+$main-purple: rgb(59, 34, 150);
+$active-purple: rgb(123 88 251);
+
+//標籤色碼
+$tag-bg-green:rgba(226, 250, 228, 1);
+$tag-border-green:rgba(146, 224, 177, 1);
+$tag-color-green:rgba(29, 182, 90, 1);
+$tag-border-red:rgba(255, 171, 171, 1);
+$tag-color-red:rgba(220, 105, 105, 1);
+$tag-bg-yellow:rgba(255, 245, 224, 1);
+$tag-border-yellow:rgba(254, 210, 140, 1);
+$tag-color-yellow:rgba(222, 167, 79, 1);
+$tag-bg-gray:rgba(240, 240, 240, 1);
+$tag-border-gray:rgba(209, 209, 209, 1);
+
+//共用寬度%
+$w-310:310px;
+$w-100:100%;
+$w-90:90%;
+$w-80:80%;
+$w-75:75%;
+$w-70:70%;
+$w-60:60%;
+$w-50:50%;
+$w-40:40%;
+$w-30:30%;
+$w-25:25%;
+$w-20:20%;
+$w-10:10%;
+
+//共用寬度vw
+$vw-100:100vw;
+$vw-90:90vw;
+$vw-80:80vw;
+$vw-75:75vw;
+$vw-70:70vw;
+$vw-60:60vw;
+$vw-50:50vw;
+$vw-40:40vw;
+$vw-30:30vw;
+$vw-25:25vw;
+$vw-20:20vw;
+$vw-10:10vw;
+
+//共用高度vh
+$vh-100:100vh;
+$vh-90:90vh;
+$vh-80:80vh;
+$vh-75:75vh;
+$vh-70:70vh;
+$vh-60:60vh;
+$vh-50:50vh;
+$vh-40:40vh;
+$vh-30:30vh;
+$vh-25:25vh;
+$vh-20:20vh;
+$vh-10:10vh;
+
+//RWD設定寬度
+$pcxl-media:1900px;
+$pcl-media:1680px;
+$pc-media:1440px;
+$pcm-media:1366px;
+$pcs-media:1152px;
+$pcxs-media:1024px;

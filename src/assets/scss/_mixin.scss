@@ -1,0 +1,191 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+
+
+// * RWD Max Width Breakpoints
+@mixin max-width($breakpoints) {
+  @media screen and (max-width: $breakpoints) {
+    @content;
+  }
+}
+
+// * RWD Min Width Breakpoints
+@mixin min-width($breakpoints) {
+  @media screen and (min-width: $breakpoints) {
+    @content;
+  }
+}
+
+
+// * ==========================================================================
+// * Font Family
+// * ==========================================================================
+
+$font-family: 'Noto Sans TC', sans-serif;
+
+// Typographies
+@mixin noto-sans-tc-9-regular {
+  font-family: $font-family;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin noto-sans-tc-10-regular {
+  font-family: $font-family;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin noto-sans-tc-12-regular {
+  font-family: $font-family;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin noto-sans-tc-14-medium {
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+@mixin noto-sans-tc-14-regular {
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin noto-sans-tc-16-bold {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin noto-sans-tc-16-medium {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+@mixin noto-sans-tc-16-medium-line19 {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+@mixin noto-sans-tc-16-regular {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin noto-sans-tc-18-regular {
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin noto-sans-tc-16-regular-line16 {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+@mixin noto-sans-tc-16-thin {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: normal;
+}
+@mixin noto-sans-tc-16-thin-line24 {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 23.17px;
+}
+
+@mixin noto-sans-tc-17-medium {
+  font-family: $font-family;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: normal;
+}
+@mixin noto-sans-tc-18-thin {
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+}
+@mixin noto-sans-tc-18-medium {
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+@mixin noto-sans-tc-20-thin {
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+}
+@mixin noto-sans-tc-20-medium {
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+}
+@mixin noto-sans-tc-20-regular {
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin noto-sans-tc-24-bold {
+  font-family: $font-family;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin noto-sans-tc-24-medium {
+  font-family: "Noto Sans TC";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+@mixin noto-sans-tc-24-regular {
+  font-family: "Noto Sans TC";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin noto-sans-tc-30-regular {
+  font-family: "Noto Sans TC";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin checkbox{
+  border: 1px solid #959595;
+  border-radius: 3px;
+}
+
+@mixin scrollBar{
+  overflow: auto;
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: $white;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: $white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #D2E7EB;
+  }
+}
