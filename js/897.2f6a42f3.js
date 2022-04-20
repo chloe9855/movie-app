@@ -1,2 +1,2 @@
 "use strict";(self["webpackChunkmovie_app"]=self["webpackChunkmovie_app"]||[]).push([[897],{4897:function(e,t,n){n.r(t),n.d(t,{default:function(){return i}});var a=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",[n("div",{staticClass:"seBox"},[n("el-input",{staticClass:"el1",attrs:{placeholder:"請輸入關鍵字","prefix-icon":"el-icon-search"},model:{value:e.searchInput,callback:function(t){e.searchInput=t},expression:"searchInput"}})],1),e._v(" 所有電影 ")])},s=[],l={data(){return{searchInput:""}}},c=l,r=n(1001),u=(0,r.Z)(c,a,s,!1,null,null,null),i=u.exports}}]);
-//# sourceMappingURL=897.69087d7e.js.map
+//# sourceMappingURL=897.2f6a42f3.js.map
