@@ -1,14 +1,7 @@
 <template>
   <div id="app">
     <SideBar />
-    <!-- <nav>
-      <router-link to="/">
-        Home
-      </router-link> |
-      <router-link to="/about">
-        About
-      </router-link>
-    </nav> -->
+
     <router-view class="rightBlock" />
   </div>
 </template>
@@ -33,7 +26,9 @@ export default {
   }
 
   .rightBlock {
-        padding: 37px 65px;
+    // padding: 37px 65px;
+    overflow-y: scroll;
+    width: 100%;
   }
 
   nav {

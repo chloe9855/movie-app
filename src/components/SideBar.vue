@@ -38,12 +38,14 @@ export default {
     @include noto-sans-tc-20-regular;
     background-color: rgb(59, 34, 150);
     color: white;
-    width: 150px;
-    padding: 45px 32px 32px 32px;
+    // width: 150px;
+    padding: 55px;
+
   }
 
   h2 {
     font-weight: 900;
+    cursor: pointer;
   }
 
   .p1 {
