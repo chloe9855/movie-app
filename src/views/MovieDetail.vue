@@ -11,9 +11,9 @@
           class="info_img"
           :src="`https://image.tmdb.org/t/p/w1280/${movieData.poster_path}`"
         >
-        <div>
+        <div class="info_description">
           <h2>{{ movieData.title }} ({{ movieData.release_date.slice(0,4) }})</h2>
-          <div>
+          <div class="type">
             <span
               v-for="item in movieData.genres"
               :key="item.id"
@@ -165,9 +165,22 @@ export default {
       position: relative;
       color: white;
       display: flex;
+      width: 100%;
+      padding: 0px 50px;
+
+      h2 {
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
 
       .info_img {
-        width: 250px;
+        width: 263px;
+      }
+
+      h3 {
+        font-size: 19px;
+        font-weight: 600;
+        margin: 20px 0 5px;
       }
     }
   }
@@ -175,6 +188,9 @@ export default {
   .circle_wrap {
     display: flex;
     align-items: center;
+    span {
+      margin-left: 10px;
+    }
   }
 
   .circle {
@@ -196,6 +212,13 @@ export default {
 
   .tagline {
     font-style: italic;
+  }
+
+  .info_description {
+    margin-left: 40px;
+    .type {
+      margin: 20px 0;
+    }
   }
 
 </style>
