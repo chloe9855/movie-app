@@ -28,11 +28,11 @@
                 type="circle"
                 :width="60"
                 :color="'#9e32a8'"
-                :percentage="movieData.vote_average * 10"
+                :percentage="Math.floor(movieData.vote_average * 10)"
               />
             </div>
 
-            <span>平均評分：{{ movieData.vote_average }}</span>
+            <span>平均評分：{{ movieData.vote_average.toFixed(1) }}</span>
           </div>
 
           <h3
@@ -57,6 +57,21 @@
         </div>
       </div>
     </div>
+
+    <div class="content_block">
+      <div class="content_actor">
+        <h3>主要演員</h3>
+      </div>
+      <div class="content_info">
+        <div
+          v-for="(item,index) in originInfo"
+          :key="index"
+        >
+          <h3>{{ item.label }}</h3>
+          <p>{{ movieData[item.value] }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -66,7 +81,8 @@ import { getMovieDetail, getMovieActors, getRecommendMovies } from '../api/index
 export default {
   data () {
     return {
-      movieData: {}
+      movieData: {},
+      originInfo: [{ label: '原始標題', value: 'original_title' }, { label: '狀態', value: 'status' }, { label: '原始語言', value: 'original_language' }, { label: '電影成本', value: 'budget' }, { label: '收入', value: 'revenue' }]
     };
   },
   name: 'MovieDetail',
@@ -111,23 +127,23 @@ export default {
     },
     bgUrl () {
       return this.movieData.backdrop_path ? `url(https://image.tmdb.org/t/p/w1280/${this.movieData.backdrop_path}) top/cover` : '';
-    },
-    actorsData: {
-      get () {
-        return this.$store.state.actorsData;
-      },
-      set (val) {
-        this.$store.dispatch('SET_ACTORS_DATA', val);
-      }
-    },
-    recommendMovies: {
-      get () {
-        return this.$store.state.recommendData;
-      },
-      set (val) {
-        this.$store.dispatch('SET_RECOMMEND_DATA', val);
-      }
     }
+    // actorsData: {
+    //   get () {
+    //     return this.$store.state.actorsData;
+    //   },
+    //   set (val) {
+    //     this.$store.dispatch('SET_ACTORS_DATA', val);
+    //   }
+    // },
+    // recommendMovies: {
+    //   get () {
+    //     return this.$store.state.recommendData;
+    //   },
+    //   set (val) {
+    //     this.$store.dispatch('SET_RECOMMEND_DATA', val);
+    //   }
+    // }
   },
   watch: {
     // movieId: {
@@ -219,6 +235,12 @@ export default {
     .type {
       margin: 20px 0;
     }
+  }
+
+  .content_block {
+    display: flex;
+        justify-content: space-between;
+    padding: 63px;
   }
 
 </style>

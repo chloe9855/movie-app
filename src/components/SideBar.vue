@@ -38,7 +38,6 @@ export default {
     @include noto-sans-tc-20-regular;
     background-color: rgb(59, 34, 150);
     color: white;
-    // width: 150px;
     padding: 55px;
 
   }
